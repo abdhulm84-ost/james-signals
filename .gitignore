@@ -1,0 +1,36 @@
+# ── NEVER commit these (credentials / live session) ─────────────────────
+tradier_config.json
+bb_config.json
+tiger_openapi_config*.properties
+*.session
+*.session-journal
+.env
+*.env
+
+# ── runtime state & ledgers (regenerable / live data) ────────────────────
+state.json
+book.json
+msg_queue.json
+*.csv
+*.pid
+spx_gate.json
+levels.json
+watch_state.json
+*.log
+
+# ── bulk data & media (kept in the runtime backup, not the code repo) ────
+photos/
+yt_analysis/
+logs/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# ── scratch outputs ──────────────────────────────────────────────────────
+output.json
+parsed_*.json
+response.json
+*_output.json
+screenshot_*_analysis.json
+fv2.json
+legacy_prerevamp.json
